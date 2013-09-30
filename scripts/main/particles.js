@@ -1,4 +1,3 @@
-
 define(['core/boilerplate', 'conf/particle'],
 	function(Boilerplate, Conf) {
 		var Particle = function() {
@@ -13,7 +12,7 @@ define(['core/boilerplate', 'conf/particle'],
 			};
 			this.speed = 0;
 			this.angle = Conf.angle;
-			this.saturation = 0;
+			this.luminance = 0;
 
 			this.init = function() {
 				// Random position
