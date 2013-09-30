@@ -1,0 +1,89 @@
+/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+body{background-color:#000;cursor:default;margin:0px;-webkit-touch-callout: none;-webkit-user-select: none;-khtml-user-select: none;-moz-user-select: none;-ms-user-select: none;user-select: none;}
+/*console definition*/
+#debug {position:absolute;top:0px;left:0px;width:100%;z-index:2;}
+#debug .text{position:absolute;font-size:11px;font-family:sans-serif;color:#CCC;margin:0;overflow:hidden;}
+#debug .text p{padding: 5px;}
+#debug .back{position:absolute;top:0px;background:#FFF;filter:alpha(opacity=25);-moz-opacity:0.25;opacity: 0.25;width:100%;height:100%;}
+/* Font Face */
+/* Yukarimobile */
+@font-face {
+    font-family: 'yukarimobile';
+    src: url('fonts/yukarimobile/yukarimobile-webfont.eot');
+    src: url('fonts/yukarimobile/yukarimobile-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/yukarimobile/yukarimobile-webfont.woff') format('woff'),
+         url('fonts/yukarimobile/yukarimobile-webfont.ttf') format('truetype'),
+         url('fonts/yukarimobile/yukarimobile-webfont.svg#yukarimobile') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* SF Archery Black */
+@font-face {
+    font-family: 'sf-archery-black';
+    src: url('fonts/sf-archery-black/sf_archery_black-webfont.eot');
+    src: url('fonts/sf-archery-black/sf_archery_black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/sf-archery-black/sf_archery_black-webfont.woff') format('woff'),
+         url('fonts/sf-archery-black/sf_archery_black-webfont.ttf') format('truetype'),
+         url('fonts/sf-archery-black/sf_archery_black-webfont.svg#sf-archery-black') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+	font-family: 'sf-archery-black';
+	/*font-family: 'yukarimobile';*/
+}
+/*global*/
+.hide {display: none;}
+/*canvas definition*/
+canvas{position:absolute; z-index:1; top: 0; left: 0; bottom: 0; right: 0; }
+/*menu definition*/
+.menu {
+	background: url(../images/background.png) no-repeat center transparent;
+	background-size: 100% 100%;
+	color: #FFF;
+	margin: 0 0px;
+	position:absolute;
+	text-align:center;
+	z-index:10;
+}
+
+	.menu_item {
+		margin-top: 12%;
+	}
+
+		.title {
+			margin-bottom: 10%;
+			text-transform: uppercase;
+			font-size: 3em;
+		}
+
+		.btn {
+			background-color: rgba(200,200,200,.2);
+			border: 1px solid #88F;
+			font-size: 2em;
+			margin-bottom: 15px;
+			padding: 4px;
+			position: relative;
+			text-transform: uppercase;
+			width: 60%;
+			left: 20%;
+			right: 20%;
+		}
+
+		.btn:hover {
+			color: #88F;
+			cursor: pointer;
+		}
+/*countdown*/
+#countdown {
+	background-color: rgba(255,255,255,.2);
+	font-size: 40px;
+	position: absolute;
+	color: #FFF;
+	top: 42%;
+	text-align: center;
+	width: 100%;
+	z-index: 30;
+}

@@ -1,0 +1,5 @@
+Install depedencies:
+	- npm install ws
+	- npm install express
+
+Run in a terminal: node run.js

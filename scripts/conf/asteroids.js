@@ -1,0 +1,6 @@
+/**
+ * Asteroids configuration
+ **/
+define({
+	
+});
